@@ -37,7 +37,7 @@ class Main extends PluginBase
     /**
      * @param mixed $dataCuaca
      */
-    public function setDataCuaca($dataCuaca): Array
+    public function setDataCuaca($dataCuaca)
     {
         $this->dataCuaca = $dataCuaca;
     }
