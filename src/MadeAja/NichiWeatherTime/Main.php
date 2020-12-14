@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MadeAja\NichiWeatherTime\Main;
+namespace MadeAja\NichiWeatherTime;
 
 
 use pocketmine\plugin\PluginBase;
