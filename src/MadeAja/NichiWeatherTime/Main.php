@@ -10,6 +10,7 @@ class Main extends PluginBase
 {
 
     public $config;
+    public $dataCuaca;
 
     public function onLoad()
     {
@@ -24,6 +25,22 @@ class Main extends PluginBase
        $this->getLogger()->info("NichiWeatherTime has been enable");
     }
 
+
+    /**
+     * @return mixed
+     */
+    public function getDataCuaca()
+    {
+        return $this->dataCuaca;
+    }
+
+    /**
+     * @param mixed $dataCuaca
+     */
+    public function setDataCuaca($dataCuaca): Array
+    {
+        $this->dataCuaca = $dataCuaca;
+    }
 
     public function onDisable()
     {
