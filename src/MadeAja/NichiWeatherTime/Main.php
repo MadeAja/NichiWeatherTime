@@ -45,6 +45,7 @@ class Main extends PluginBase
     public function onDisable()
     {
         file_put_contents($this->getDataFolder()."config.yml", yaml_emit($this->config));
+        sleep(1);
     }
 
 }
