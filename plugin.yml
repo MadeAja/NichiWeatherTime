@@ -1,0 +1,25 @@
+
+# Made by :
+#
+#    ███╗░░░███╗░█████╗░██████╗░███████╗░█████╗░░░░░░██╗░█████╗░
+#    ████╗░████║██╔══██╗██╔══██╗██╔════╝██╔══██╗░░░░░██║██╔══██╗
+#    ██╔████╔██║███████║██║░░██║█████╗░░███████║░░░░░██║███████║
+#    ██║╚██╔╝██║██╔══██║██║░░██║██╔══╝░░██╔══██║██╗░░██║██╔══██║
+#    ██║░╚═╝░██║██║░░██║██████╔╝███████╗██║░░██║╚█████╔╝██║░░██║
+#    ╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝
+
+# A PocketMine-MP plugin that allows players to use tags
+# Copyright (C) 2020 MadeAja
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# he Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+name: NichiWeatherTime
+version: 2.0.0
+main: MadeAja\NichiWeatherTime\Main
+api: 3.0.0
+author: MadeAja
+website: "https://github.com/MadeAja/NichiWeatherTime"
+description: This is a plugin which can follow the weather and time of the real world
