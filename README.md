@@ -7,7 +7,6 @@
 ### Upcomming Feature
 
 ### Api 
-  ```
-  php
-    $this
-   ```
+  ```php
+/** @var $this->getServer()->getPluginManager()->getPlugin("NichiWeatherTime)->getWeather(); */
+```
