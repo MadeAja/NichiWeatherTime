@@ -30,7 +30,7 @@ class WtCommand extends PluginCommand
      * @param array $args
      * @return bool|mixed|void
      */
-    public function execute(CommandSender $sender, string $commandLabel, array $args): bool
+    public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
         if(!$sender->hasPermission("wt.command")){
             $sender->sendMessage(TextFormat::RED."You dont have permission");
