@@ -46,10 +46,7 @@ class Main extends PluginBase
         $this->dataCuaca = $dataCuaca;
     }
 
-    /**
-     * @return mixed
-     */
-    public static function getInstance(): Main
+     public static function getInstance(): Main
     {
         return self::$instance;
     }
