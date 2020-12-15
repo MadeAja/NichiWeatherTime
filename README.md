@@ -11,7 +11,7 @@ A PMMP plugin that can determine the weather and time just like in the real worl
 
 ## Commands
 
-`/wt`  (`/rt`) are the main commands
+
 
 `/wt start` Activates real time and weather `enablewt` in config.yml to true.
 
@@ -28,12 +28,19 @@ Add Api Weather
 
 ## How to install
 Download this plugin
+
 Put this plugin in folder plugins in your server
+
 Configure `start_day_time` in `config.yml` <i> [eg: 8 = 8 AM, 13 = 1 PM] Minimum: 0, Maximum: 23. </i>
+
 Configure `update_time` To set the time speed in `config.yml`
+
 Configure `cityname` to set weather zone in `config.yml`
+
 API KEY DO NOT MODIFIED
+
 restart server
+
 and enjoy
 
  ## Additional Notes
