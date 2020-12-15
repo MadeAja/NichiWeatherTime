@@ -23,3 +23,7 @@ api: 3.0.0
 author: MadeAja
 website: "https://github.com/MadeAja/NichiWeatherTime"
 description: This is a plugin which can follow the weather and time of the real world
+
+permissions:
+  wt.command:
+    default: op

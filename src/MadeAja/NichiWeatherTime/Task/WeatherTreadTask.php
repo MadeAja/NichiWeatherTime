@@ -5,6 +5,7 @@ namespace MadeAja\NichiWeatherTime\Task;
 
 
 use MadeAja\NichiWeatherTime\Main;
+use pocketmine\network\mcpe\protocol\LevelEventPacket;
 use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;
 
@@ -32,13 +33,27 @@ class WeatherTreadTask extends AsyncTask
     public function onCompletion(Server $server)
     {
         if($this->getResult()['status'] === 400){
+            $this->getPlugin()->getScheduler()->cancelAllTasks();
             Server::getInstance()->shutdown();
             Server::getInstance()->getLogger()->warning("API KEY INVALID");
         }
-        $this->getPlugin()->updateDataCuaca($this->getResult()['list']);
-    }
+            foreach ($server->getOnlinePlayers() as $player) {
+                if ((string)$this->getResult()['list']['respon']['cuaca'] === "Rain") {
+                    $pk = new LevelEventPacket();
+                    $pk->evid = LevelEventPacket::EVENT_START_RAIN;
+                    $pk->data = 100000;
+                    $player->dataPacket($pk);
+                }else{
+                    $pk = new LevelEventPacket();
+                    $pk->evid = LevelEventPacket::EVENT_STOP_RAIN;
+                    $pk->data = 100000;
+                    $player->dataPacket($pk);
+                }
+            }
 
-    public function getPlugin(): Main{
+        }
+
+        public function getPlugin(): Main{
         return Main::getInstance();
     }
 
